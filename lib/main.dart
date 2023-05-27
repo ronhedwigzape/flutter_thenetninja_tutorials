@@ -27,24 +27,32 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600]
       ),
-      body: Row( // Row is a layout
-        mainAxisAlignment: MainAxisAlignment.center, // center the children
-        crossAxisAlignment: CrossAxisAlignment.start, // align the children to the top
-        children: <Widget>[ // children is a list of widgets to be displayed
-          Text('My First App'),
-          TextButton(
-            onPressed: () {},
-            style: TextButton.styleFrom(
-              foregroundColor: Colors.white, backgroundColor: Colors.red[600],
-            ),
-            child: Text('Click Me')
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          Row(
+            children: const <Widget>[
+              Text('Hello'),
+              Text('World'),
+            ]
           ),
           Container(
+            padding: EdgeInsets.all(20.0),
             color: Colors.cyan,
+            child: Text('Hello')
+          ),
+           Container(
             padding: EdgeInsets.all(30.0),
-            child: Text('Inside Container'),
-          )
-        ]
+            color: Colors.pinkAccent,
+            child: Text('Hello')
+          ),
+           Container(
+            padding: EdgeInsets.all(40.0),
+            color: Colors.amber,
+            child: Text('Hello')
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
