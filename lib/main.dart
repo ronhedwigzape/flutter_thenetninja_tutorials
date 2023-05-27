@@ -37,16 +37,22 @@ class Home extends StatelessWidget {
               Text('World'),
             ]
           ),
-          Container(
-            padding: EdgeInsets.all(20.0),
-            color: Colors.cyan,
-            child: Text('Hello')
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
+            child: Container(
+              padding: EdgeInsets.all(20.0),
+              color: Colors.cyan,
+              child: Text('Hello')
+            ),
           ),
-           Container(
-            padding: EdgeInsets.all(30.0),
-            color: Colors.pinkAccent,
-            child: Text('Hello')
-          ),
+           Padding(
+             padding: const EdgeInsets.all(8.0),
+             child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.pinkAccent,
+              child: Text('Hello')
+                     ),
+           ),
            Container(
             padding: EdgeInsets.all(40.0),
             color: Colors.amber,
