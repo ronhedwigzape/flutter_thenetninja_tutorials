@@ -27,17 +27,11 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600]
       ),
-      body: Center(
-        child: ElevatedButton.icon(
-          onPressed: () {
-            print('You clicked me');
-          }, 
-          icon: Icon(Icons.mail),
-          label: Text('My First Button'),
-            style: ElevatedButton.styleFrom(
-              foregroundColor: Colors.white, backgroundColor: Colors.amber
-            )
-          )
+      body: Container(
+        padding: EdgeInsets.fromLTRB(20.0, 40.0, 20.0, 20.0),
+        margin: EdgeInsets.all(20.0),
+        color: Colors.grey[400],
+        child: Text('Hello'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
