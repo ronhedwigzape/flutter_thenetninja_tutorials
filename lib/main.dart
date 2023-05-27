@@ -27,38 +27,40 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600]
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+      body: Row(
         children: <Widget>[
-          Row(
-            children: const <Widget>[
-              Text('Hello'),
-              Text('World'),
-            ]
+          Expanded(
+            flex: 3,
+            child: Image.asset('assets/images/2.jpg'),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
+          Expanded(
+            flex: 3,
             child: Container(
-              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.all(10.0),
+              padding: EdgeInsets.all(30.0),
               color: Colors.cyan,
-              child: Text('Hello')
+              child: Text('1')
             ),
           ),
-           Padding(
-             padding: const EdgeInsets.all(8.0),
-             child: Container(
+          Expanded(
+            flex: 2,
+            child: Container(
+              margin: EdgeInsets.all(10.0),
               padding: EdgeInsets.all(30.0),
               color: Colors.pinkAccent,
-              child: Text('Hello')
-                     ),
-           ),
-           Container(
-            padding: EdgeInsets.all(40.0),
-            color: Colors.amber,
-            child: Text('Hello')
+              child: Text('2')
+            ),
           ),
-        ],
+          Expanded(
+            flex: 1,
+            child: Container(
+              margin: EdgeInsets.all(10.0),
+              padding: EdgeInsets.all(30.0),
+              color: Colors.amber,
+              child: Text('3')
+            ),
+          )
+        ]
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
